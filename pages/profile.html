@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./common.css" />
+		<title>Cart Page</title>
+
+		<script
+			src="https://kit.fontawesome.com/cb91afed1c.js"
+			crossorigin="anonymous"
+		></script>
+		<script>
+			function openMobileSidebar() {
+				var mobileBar = document.getElementById("mobile-sidebar");
+				mobileBar.style.display = "block";
+			}
+			function closeMobileSidebar() {
+				var mobileBar = document.getElementById("mobile-sidebar");
+				mobileBar.style.display = "none";
+			}
+		</script>
+	</head>
+	<body>
+		<main>
+			<div>
+				<header class="header">
+					<div class="header-sub-container">
+						<button
+							class="btn btn-primary btn-icon btn-menu"
+							onclick="openMobileSidebar()"
+						>
+							<i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+						</button>
+						<a href="#" class="btn btn-link btn-hide">
+							<img
+								class="img-round logo-container"
+								src="../resources/ecommerce-logo.png"
+								alt="logo"
+							/>
+						</a>
+						<a href="#" class="btn btn-link"> Home </a>
+						<a href="#" class="btn btn-link btn-hide"> Shop </a>
+					</div>
+					<div class="search-container btn-hide">
+						<button class="btn btn-icon">
+							<i class="fa fa-search fa-lg" aria-hidden="true"></i>
+						</button>
+						<input
+							type="text"
+							class="search-bar"
+							placeholder="woodland shoes.."
+						/>
+					</div>
+
+					<div class="header-sub-container">
+						<button class="btn btn-primary btn-icon btn-hide">
+							<i
+								class="fa fa-shopping-cart fa-2x btn-hide"
+								aria-hidden="true"
+							></i>
+						</button>
+						<button class="btn btn-primary btn-icon btn-hide">
+							<i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+						</button>
+						<button class="btn btn-primary btn-icon">
+							<i class="fa fa-user fa-2x" aria-hidden="true"></i>
+						</button>
+					</div>
+				</header>
+			</div>
+
+			<div class="mobile-sidebar" id="mobile-sidebar">
+				<div class="drawer">
+					<div class="drawer-header">
+						<button class="btn btn-primary btn-icon">
+							<i class="fa fa-user fa-2x" aria-hidden="true"></i>
+						</button>
+						<button class="btn btn-icon" onclick="closeMobileSidebar()">
+							<i class="fa fa-times fa-lg" aria-hidden="true"></i>
+						</button>
+					</div>
+
+					<div class="drawer-body">
+						<a class="drawer-item link-no-style" href="#">
+							<p>Home</p>
+						</a>
+						<a class="drawer-item link-no-style" href="#">
+							<p>Shop Now</p>
+						</a>
+						<a class="drawer-item link-no-style" href="#">
+							<p>Profile</p>
+						</a>
+						<a class="drawer-item link-no-style" href="#">
+							<p>Orders</p>
+						</a>
+						<a class="drawer-item link-no-style" href="#">
+							<p>Addresses</p>
+						</a>
+						<a class="drawer-item link-no-style" href="#">
+							<p>Setting</p>
+						</a>
+						<a class="drawer-item link-no-style" href="#">
+							<p>Logout</p>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="flex-vt-center">
+				<p class="typo-label flex-hz-center p-2">Account</p>
+				<div class="profile-container">
+					<div class="profile-links btn-hide">
+						<a class="btn btn-text typo-label m-1 active-tag">Profile</a>
+						<hr />
+						<a class="btn btn-text typo-label m-1">Order</a>
+						<hr />
+						<a class="btn btn-text typo-label m-1">Address</a>
+						<hr />
+						<a class="btn btn-text typo-label m-1">Setting</a>
+						<hr />
+					</div>
+					<div class="profile-items">
+						<h4 class="profile-heading h4">Profile Details</h4>
+						<div class="profile-row">
+							<p class="typo-subtext profile-row-heading">Name</p>
+							<p class="typo-subtext">Nikhil Jugale</p>
+						</div>
+						<div class="profile-row">
+							<p class="typo-subtext profile-row-heading">Email</p>
+							<p class="typo-subtext">nikhiljugale007@gmail.com</p>
+						</div>
+						<div class="profile-row">
+							<p class="typo-subtext profile-row-heading">Mobile no</p>
+							<p class="typo-subtext">1234567890</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
