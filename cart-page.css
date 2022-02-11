@@ -72,6 +72,10 @@ body {
 hr {
 	margin: 0;
 }
+.item-counter {
+	display: flex;
+	align-items: center;
+}
 
 .bill-item {
 	display: flex;
@@ -84,7 +88,7 @@ hr {
 	flex-direction: column;
 	padding: 1rem 0;
 }
-.btn-full-width {
+.full-width {
 	width: 100%;
 }
 
