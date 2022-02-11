@@ -108,7 +108,9 @@ hr {
 	background-color: var(--primary-color);
 	color: var(--danger-color);
 }
-
+.full-width {
+	width: 100%;
+}
 ::-webkit-scrollbar {
 	width: 0;
 	background: transparent;
