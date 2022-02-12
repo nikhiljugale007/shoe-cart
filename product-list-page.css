@@ -1,5 +1,5 @@
 @import url("https://vercel-ui-preview.netlify.app/component-lib/all-comp.css");
-@import url("https://vercel-ui-preview.netlify.app/component-lib/all-comp.css");
+@import url("https://kit.fontawesome.com/cb91afed1c.js");
 * {
 	margin: 0;
 	box-sizing: border-box;
@@ -100,16 +100,34 @@ hr {
 	background-color: var(--primary-color);
 	color: var(--complimentary-font-color);
 }
+.btn-icon {
+	color: #2d3748;
+}
+
 .wishlisted {
-	background-color: var(--primary-color);
+	background-color: var(--hover-color);
 	color: var(--danger-color);
 }
-.wishlisted:hover {
-	background-color: var(--primary-color);
-	color: var(--danger-color);
-}
+
 .full-width {
 	width: 100%;
+}
+
+.badge-parent {
+	position: relative;
+}
+.badge-itself {
+	position: absolute;
+	top: -1rem;
+	right: -1rem;
+}
+.card {
+	border: 1px solid var(--primary-color);
+}
+.card-img-container {
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	height: 25rem;
 }
 ::-webkit-scrollbar {
 	width: 0;
