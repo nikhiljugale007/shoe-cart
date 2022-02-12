@@ -13,248 +13,251 @@
 		></script>
 	</head>
 	<body>
-		<div>
-			<header class="header">
-				<div class="header-sub-container">
-					<button class="btn btn-primary btn-icon btn-menu">
-						<i class="fa fa-bars fa-lg" aria-hidden="true"></i>
-					</button>
-					<a href="#" class="btn btn-link btn-hide">
-						<img
-							class="img-round logo-container"
-							src="../resources/ecommerce-logo.png"
-							alt="logo"
+		<main>
+			<div>
+				<header class="header">
+					<div class="header-sub-container">
+						<button class="btn btn-primary btn-icon btn-menu">
+							<i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+						</button>
+						<a href="#" class="btn btn-link btn-hide">
+							<img
+								class="img-round logo-container"
+								src="../resources/ecommerce-logo.png"
+								alt="logo"
+							/>
+						</a>
+						<a href="#" class="btn btn-link"> Home </a>
+						<a href="#" class="btn btn-link btn-hide"> Shop </a>
+					</div>
+					<div class="search-container btn-hide">
+						<button class="btn btn-icon">
+							<i class="fa fa-search fa-lg" aria-hidden="true"></i>
+						</button>
+						<input
+							type="text"
+							class="search-bar"
+							placeholder="woodland shoes.."
 						/>
-					</a>
-					<a href="#" class="btn btn-link"> Home </a>
-					<a href="#" class="btn btn-link btn-hide"> Shop </a>
-				</div>
-				<div class="search-container btn-hide">
-					<button class="btn btn-icon">
-						<i class="fa fa-search fa-lg" aria-hidden="true"></i>
-					</button>
-					<input
-						type="text"
-						class="search-bar"
-						placeholder="woodland shoes.."
-					/>
-				</div>
+					</div>
 
-				<div class="header-sub-container">
-					<button class="btn btn-primary btn-icon btn-hide">
-						<i
-							class="fa fa-shopping-cart fa-2x btn-hide"
-							aria-hidden="true"
-						></i>
-					</button>
-					<button class="btn btn-primary btn-icon btn-hide">
-						<i class="fa fa-heart fa-2x" aria-hidden="true"></i>
-					</button>
-					<button class="btn btn-primary btn-icon">
-						<i class="fa fa-user fa-2x" aria-hidden="true"></i>
-					</button>
-				</div>
-			</header>
-		</div>
-		<div>
-			<p class="typo-title flex-hz-center p-2">Wishlisted items</p>
-		</div>
-		<div class="grid grid-4-responsive">
-			<div class="card">
-				<div class="badge-image-container">
-					<span class="chip ecommerce-chip-left"> <p>NEW</p> </span>
-					<img
-						class="card-img-container"
-						src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/7695721/2018/10/26/89c7901f-02f0-4e98-85d2-f945fdb7da3e1540553499022-Red-Chief-Black-Low-Ankle-Leather-Derby-Shoes-RC3527-001-1851540553498851-1.jpg"
-						alt="footware"
-					/>
-					<button
-						class="btn btn-outlined btn-icon ecommerce-chip-right wishlisted"
-					>
-						<i class="fa fa-heart" aria-hidden="true"></i>
-					</button>
-				</div>
-				<div class="card-body">
-					<p class="typo-label">Oxford formal shoes</p>
-					<div class="flex-hz-space-bw">
-						<p class="typo-subtext">Sold By : Sir Corbett</p>
-						<div class="star-rating-view">
-							<span class="rating-text">4</span>
-							<span class="rating-icon">
-								<i class="fa fa-star fa-md" aria-hidden="true"></i>
-							</span>
-							<span class="rating-text">|</span>
-							<span class="rating-text">5</span>
+					<div class="header-sub-container">
+						<button class="btn btn-primary btn-icon btn-hide">
+							<i class="far fa-heart fa-2x badge-parent">
+								<span class="badge-content badge-itself">5</span>
+							</i>
+						</button>
+						<button class="btn btn-primary btn-icon btn-hide">
+							<i class="fas fa-shopping-basket fa-2x badge-parent">
+								<span class="badge-content badge-itself">3</span>
+							</i>
+						</button>
+						<button class="btn btn-primary btn-icon">
+							<i class="far fa-user-circle fa-2x"></i>
+						</button>
+					</div>
+				</header>
+			</div>
+			<div>
+				<p class="typo-title flex-hz-center m-1">Wishlisted items</p>
+				<div class="grid grid-4-responsive">
+					<div class="card">
+						<div class="badge-image-container">
+							<span class="text-badge ecommerce-chip-left"> <p>NEW</p> </span>
+							<img
+								class="card-img-container img-responsive"
+								src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/7695721/2018/10/26/89c7901f-02f0-4e98-85d2-f945fdb7da3e1540553499022-Red-Chief-Black-Low-Ankle-Leather-Derby-Shoes-RC3527-001-1851540553498851-1.jpg"
+								alt="footware"
+							/>
+							<button
+								class="btn btn-outlined btn-icon ecommerce-chip-right wishlisted"
+							>
+								<i class="fas fa-times fa-lg"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="typo-label">Oxford formal shoes</p>
+							<div class="flex-hz-space-bw">
+								<p class="typo-subtext">Sold By : Sir Corbett</p>
+								<div class="star-rating-view">
+									<span class="rating-text">4</span>
+									<span class="rating-icon">
+										<i class="fa fa-star fa-md" aria-hidden="true"></i>
+									</span>
+									<span class="rating-text">|</span>
+									<span class="rating-text">5</span>
+								</div>
+							</div>
+							<p class="text-bold">
+								Rs. 974
+								<span class="typo-subtext text-line-through">Rs 3249</span>
+								<span class="typo-subtext text-primary">10% off</span>
+							</p>
+
+							<div class="card-footer-container ecommerce-card-footer">
+								<button class="btn btn-outlined">ADD TO CART</button>
+							</div>
 						</div>
 					</div>
-					<p class="text-bold">
-						Rs. 974
-						<span class="typo-subtext text-line-through">Rs 3249</span>
-						<span class="typo-subtext text-primary">10% off</span>
-					</p>
 
-					<div class="card-footer-container ecommerce-card-footer">
-						<button class="btn btn-outlined">ADD TO CART</button>
+					<div class="card">
+						<div class="badge-image-container">
+							<span class="text-badge ecommerce-chip-left"> <p>NEW</p> </span>
+							<img
+								class="card-img-container img-responsive"
+								src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/7695721/2018/10/26/89c7901f-02f0-4e98-85d2-f945fdb7da3e1540553499022-Red-Chief-Black-Low-Ankle-Leather-Derby-Shoes-RC3527-001-1851540553498851-1.jpg"
+								alt="footware"
+							/>
+							<button
+								class="btn btn-outlined btn-icon ecommerce-chip-right wishlisted"
+							>
+								<i class="fas fa-times fa-lg"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="typo-label">Oxford formal shoes</p>
+							<div class="flex-hz-space-bw">
+								<p class="typo-subtext">Sold By : Sir Corbett</p>
+								<div class="star-rating-view">
+									<span class="rating-text">4</span>
+									<span class="rating-icon">
+										<i class="fa fa-star fa-md" aria-hidden="true"></i>
+									</span>
+									<span class="rating-text">|</span>
+									<span class="rating-text">5</span>
+								</div>
+							</div>
+							<p class="text-bold">
+								Rs. 974
+								<span class="typo-subtext text-line-through">Rs 3249</span>
+								<span class="typo-subtext text-primary">10% off</span>
+							</p>
+
+							<div class="card-footer-container ecommerce-card-footer">
+								<button class="btn btn-outlined">ADD TO CART</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- card3 -->
+					<div class="card">
+						<div class="badge-image-container">
+							<span class="text-badge ecommerce-chip-left"> <p>NEW</p> </span>
+							<img
+								class="card-img-container img-responsive"
+								src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/7695721/2018/10/26/89c7901f-02f0-4e98-85d2-f945fdb7da3e1540553499022-Red-Chief-Black-Low-Ankle-Leather-Derby-Shoes-RC3527-001-1851540553498851-1.jpg"
+								alt="footware"
+							/>
+							<button
+								class="btn btn-outlined btn-icon ecommerce-chip-right wishlisted"
+							>
+								<i class="fas fa-times fa-lg"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="typo-label">Oxford formal shoes</p>
+							<div class="flex-hz-space-bw">
+								<p class="typo-subtext">Sold By : Sir Corbett</p>
+								<div class="star-rating-view">
+									<span class="rating-text">4</span>
+									<span class="rating-icon">
+										<i class="fa fa-star fa-md" aria-hidden="true"></i>
+									</span>
+									<span class="rating-text">|</span>
+									<span class="rating-text">5</span>
+								</div>
+							</div>
+							<p class="text-bold">
+								Rs. 974
+								<span class="typo-subtext text-line-through">Rs 3249</span>
+								<span class="typo-subtext text-primary">10% off</span>
+							</p>
+
+							<div class="card-footer-container ecommerce-card-footer">
+								<button class="btn btn-outlined">ADD TO CART</button>
+							</div>
+						</div>
+					</div>
+					<!-- card4 -->
+					<div class="card">
+						<div class="badge-image-container">
+							<span class="text-badge ecommerce-chip-left"> <p>NEW</p> </span>
+							<img
+								class="card-img-container img-responsive"
+								src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/7695721/2018/10/26/89c7901f-02f0-4e98-85d2-f945fdb7da3e1540553499022-Red-Chief-Black-Low-Ankle-Leather-Derby-Shoes-RC3527-001-1851540553498851-1.jpg"
+								alt="footware"
+							/>
+							<button
+								class="btn btn-outlined btn-icon ecommerce-chip-right wishlisted"
+							>
+								<i class="fas fa-times fa-lg"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="typo-label">Oxford formal shoes</p>
+							<div class="flex-hz-space-bw">
+								<p class="typo-subtext">Sold By : Sir Corbett</p>
+								<div class="star-rating-view">
+									<span class="rating-text">4</span>
+									<span class="rating-icon">
+										<i class="fa fa-star fa-md" aria-hidden="true"></i>
+									</span>
+									<span class="rating-text">|</span>
+									<span class="rating-text">5</span>
+								</div>
+							</div>
+							<p class="text-bold">
+								Rs. 974
+								<span class="typo-subtext text-line-through">Rs 3249</span>
+								<span class="typo-subtext text-primary">10% off</span>
+							</p>
+
+							<div class="card-footer-container ecommerce-card-footer">
+								<button class="btn btn-outlined">ADD TO CART</button>
+							</div>
+						</div>
+					</div>
+					<!-- card5 -->
+					<div class="card">
+						<div class="badge-image-container">
+							<span class="text-badge ecommerce-chip-left"> <p>NEW</p> </span>
+							<img
+								class="card-img-container img-responsive"
+								src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/7695721/2018/10/26/89c7901f-02f0-4e98-85d2-f945fdb7da3e1540553499022-Red-Chief-Black-Low-Ankle-Leather-Derby-Shoes-RC3527-001-1851540553498851-1.jpg"
+								alt="footware"
+							/>
+							<button
+								class="btn btn-outlined btn-icon ecommerce-chip-right wishlisted"
+							>
+								<i class="fas fa-times fa-lg"></i>
+							</button>
+						</div>
+						<div class="card-body">
+							<p class="typo-label">Oxford formal shoes</p>
+							<div class="flex-hz-space-bw">
+								<p class="typo-subtext">Sold By : Sir Corbett</p>
+								<div class="star-rating-view">
+									<span class="rating-text">4</span>
+									<span class="rating-icon">
+										<i class="fa fa-star fa-md" aria-hidden="true"></i>
+									</span>
+									<span class="rating-text">|</span>
+									<span class="rating-text">5</span>
+								</div>
+							</div>
+							<p class="text-bold">
+								Rs. 974
+								<span class="typo-subtext text-line-through">Rs 3249</span>
+								<span class="typo-subtext text-primary">10% off</span>
+							</p>
+
+							<div class="card-footer-container ecommerce-card-footer">
+								<button class="btn btn-outlined">ADD TO CART</button>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-
-			<div class="card">
-				<div class="badge-image-container">
-					<span class="chip ecommerce-chip-left"> <p>NEW</p> </span>
-					<img
-						class="card-img-container"
-						src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/7695721/2018/10/26/89c7901f-02f0-4e98-85d2-f945fdb7da3e1540553499022-Red-Chief-Black-Low-Ankle-Leather-Derby-Shoes-RC3527-001-1851540553498851-1.jpg"
-						alt="footware"
-					/>
-					<button
-						class="btn btn-outlined btn-icon ecommerce-chip-right wishlisted"
-					>
-						<i class="fa fa-heart" aria-hidden="true"></i>
-					</button>
-				</div>
-				<div class="card-body">
-					<p class="typo-label">Oxford formal shoes</p>
-					<div class="flex-hz-space-bw">
-						<p class="typo-subtext">Sold By : Sir Corbett</p>
-						<div class="star-rating-view">
-							<span class="rating-text">4</span>
-							<span class="rating-icon">
-								<i class="fa fa-star fa-md" aria-hidden="true"></i>
-							</span>
-							<span class="rating-text">|</span>
-							<span class="rating-text">5</span>
-						</div>
-					</div>
-					<p class="text-bold">
-						Rs. 974
-						<span class="typo-subtext text-line-through">Rs 3249</span>
-						<span class="typo-subtext text-primary">10% off</span>
-					</p>
-
-					<div class="card-footer-container ecommerce-card-footer">
-						<button class="btn btn-outlined">ADD TO CART</button>
-					</div>
-				</div>
-			</div>
-
-			<!-- card3 -->
-			<div class="card">
-				<div class="badge-image-container">
-					<span class="chip ecommerce-chip-left"> <p>NEW</p> </span>
-					<img
-						class="card-img-container"
-						src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/7695721/2018/10/26/89c7901f-02f0-4e98-85d2-f945fdb7da3e1540553499022-Red-Chief-Black-Low-Ankle-Leather-Derby-Shoes-RC3527-001-1851540553498851-1.jpg"
-						alt="footware"
-					/>
-					<button
-						class="btn btn-outlined btn-icon ecommerce-chip-right wishlisted"
-					>
-						<i class="fa fa-heart" aria-hidden="true"></i>
-					</button>
-				</div>
-				<div class="card-body">
-					<p class="typo-label">Oxford formal shoes</p>
-					<div class="flex-hz-space-bw">
-						<p class="typo-subtext">Sold By : Sir Corbett</p>
-						<div class="star-rating-view">
-							<span class="rating-text">4</span>
-							<span class="rating-icon">
-								<i class="fa fa-star fa-md" aria-hidden="true"></i>
-							</span>
-							<span class="rating-text">|</span>
-							<span class="rating-text">5</span>
-						</div>
-					</div>
-					<p class="text-bold">
-						Rs. 974
-						<span class="typo-subtext text-line-through">Rs 3249</span>
-						<span class="typo-subtext text-primary">10% off</span>
-					</p>
-
-					<div class="card-footer-container ecommerce-card-footer">
-						<button class="btn btn-outlined">ADD TO CART</button>
-					</div>
-				</div>
-			</div>
-			<!-- card4 -->
-			<div class="card">
-				<div class="badge-image-container">
-					<span class="chip ecommerce-chip-left"> <p>NEW</p> </span>
-					<img
-						class="card-img-container"
-						src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/7695721/2018/10/26/89c7901f-02f0-4e98-85d2-f945fdb7da3e1540553499022-Red-Chief-Black-Low-Ankle-Leather-Derby-Shoes-RC3527-001-1851540553498851-1.jpg"
-						alt="footware"
-					/>
-					<button
-						class="btn btn-outlined btn-icon ecommerce-chip-right wishlisted"
-					>
-						<i class="fa fa-heart" aria-hidden="true"></i>
-					</button>
-				</div>
-				<div class="card-body">
-					<p class="typo-label">Oxford formal shoes</p>
-					<div class="flex-hz-space-bw">
-						<p class="typo-subtext">Sold By : Sir Corbett</p>
-						<div class="star-rating-view">
-							<span class="rating-text">4</span>
-							<span class="rating-icon">
-								<i class="fa fa-star fa-md" aria-hidden="true"></i>
-							</span>
-							<span class="rating-text">|</span>
-							<span class="rating-text">5</span>
-						</div>
-					</div>
-					<p class="text-bold">
-						Rs. 974
-						<span class="typo-subtext text-line-through">Rs 3249</span>
-						<span class="typo-subtext text-primary">10% off</span>
-					</p>
-
-					<div class="card-footer-container ecommerce-card-footer">
-						<button class="btn btn-outlined">ADD TO CART</button>
-					</div>
-				</div>
-			</div>
-			<!-- card5 -->
-			<div class="card">
-				<div class="badge-image-container">
-					<span class="chip ecommerce-chip-left"> <p>NEW</p> </span>
-					<img
-						class="card-img-container"
-						src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/7695721/2018/10/26/89c7901f-02f0-4e98-85d2-f945fdb7da3e1540553499022-Red-Chief-Black-Low-Ankle-Leather-Derby-Shoes-RC3527-001-1851540553498851-1.jpg"
-						alt="footware"
-					/>
-					<button
-						class="btn btn-outlined btn-icon ecommerce-chip-right wishlisted"
-					>
-						<i class="fa fa-heart" aria-hidden="true"></i>
-					</button>
-				</div>
-				<div class="card-body">
-					<p class="typo-label">Oxford formal shoes</p>
-					<div class="flex-hz-space-bw">
-						<p class="typo-subtext">Sold By : Sir Corbett</p>
-						<div class="star-rating-view">
-							<span class="rating-text">4</span>
-							<span class="rating-icon">
-								<i class="fa fa-star fa-md" aria-hidden="true"></i>
-							</span>
-							<span class="rating-text">|</span>
-							<span class="rating-text">5</span>
-						</div>
-					</div>
-					<p class="text-bold">
-						Rs. 974
-						<span class="typo-subtext text-line-through">Rs 3249</span>
-						<span class="typo-subtext text-primary">10% off</span>
-					</p>
-
-					<div class="card-footer-container ecommerce-card-footer">
-						<button class="btn btn-outlined">ADD TO CART</button>
-					</div>
-				</div>
-			</div>
-		</div>
+		</main>
 	</body>
 </html>

@@ -14,7 +14,7 @@ main {
 	padding: 0 1.6rem;
 	display: grid;
 	gap: 1.6rem;
-	grid-template-rows: auto 1fr 1fr 1fr auto;
+	grid-template-rows: auto auto 1fr;
 }
 
 .header {
@@ -59,14 +59,24 @@ main {
 hr {
 	margin: 0;
 }
-
-.wishlisted {
-	background-color: var(--primary-bg-color);
-	color: var(--danger-color);
+.btn {
+	color: #2d3748;
 }
-.wishlisted:hover {
-	background-color: var(--primary-bg-color);
-	color: var(--danger-color);
+.badge-parent {
+	position: relative;
+}
+.badge-itself {
+	position: absolute;
+	top: -1rem;
+	right: -1rem;
+}
+.card {
+	border: 1px solid var(--primary-color);
+}
+.card-img-container {
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	height: 25rem;
 }
 @media screen and (max-width: 992px) {
 	main {
