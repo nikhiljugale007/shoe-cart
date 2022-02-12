@@ -40,6 +40,17 @@ body {
 	outline: none;
 	border-radius: 8px;
 }
+.header .btn-icon {
+	color: #2d3748;
+}
+.badge-parent {
+	position: relative;
+}
+.badge-itself {
+	position: absolute;
+	top: -1rem;
+	right: -1rem;
+}
 ::-webkit-scrollbar {
 	width: 0;
 	background: transparent;
