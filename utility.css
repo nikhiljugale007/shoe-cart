@@ -15,13 +15,27 @@
 	align-items: center;
 	justify-content: center;
 }
+.g-1 {
+	gap: 1rem;
+}
+.p-0 {
+	padding: 0;
+}
 .p-1 {
 	padding: 1rem;
+}
+.pv-1 {
+	padding: 1rem 0;
 }
 .p-2 {
 	padding: 2rem;
 }
-
+.m-1 {
+	margin: 1rem;
+}
+.m-2 {
+	margin: 2rem;
+}
 .hide-element {
 	display: none;
 }
