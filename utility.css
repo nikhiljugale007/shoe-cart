@@ -1,0 +1,33 @@
+.flex-hz-space-bw {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.flex-hz-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.flex-vt-center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.p-1 {
+	padding: 1rem;
+}
+.p-2 {
+	padding: 2rem;
+}
+
+.hide-element {
+	display: none;
+}
+.show-element {
+	display: block;
+}
+.full-width {
+	width: 100%;
+}
