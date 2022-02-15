@@ -30,9 +30,7 @@ main {
 	align-items: center;
 	gap: 0 2rem;
 }
-.btn {
-	color: #2d3748;
-}
+
 .search-container {
 	display: flex;
 	gap: 0;
@@ -90,6 +88,7 @@ main {
 .category-item img {
 	width: 12rem;
 	height: 12rem;
+	object-fit: cover;
 }
 
 .featured-brand {
