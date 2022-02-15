@@ -25,7 +25,6 @@ main {
 	align-items: center;
 	justify-content: space-between;
 	box-shadow: 0 5px 3px -3px var(--box-shadow);
-	/* background-color: var(--hover-color); */
 }
 .header-sub-container {
 	display: flex;
@@ -90,9 +89,7 @@ main {
 	gap: 2rem;
 	justify-items: center;
 }
-.chip p {
-	margin-right: 2rem;
-}
+
 hr {
 	margin: 0;
 }
@@ -121,8 +118,8 @@ hr {
 	top: -1rem;
 	right: -1rem;
 }
-.card {
-	border: 1px solid var(--primary-color);
+.text-badge {
+	color: var(--complimentary-font-color);
 }
 .card-img-container {
 	border-top-right-radius: 5px;
