@@ -121,8 +121,8 @@ hr {
 	top: -1rem;
 	right: -1rem;
 }
-.text-badge {
-	color: var(--complimentary-font-color);
+.card {
+	border: 1px solid var(--primary-color);
 }
 .card-img-container {
 	border-top-right-radius: 5px;
