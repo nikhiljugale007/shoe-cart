@@ -59,10 +59,10 @@
                 <form class="form card">
                     <p class="typo-title flex-hz-center p-2">Sign in</p>
                     <label for="email" class="typo-label" >Email address</label>
-                    <input type="text" class="input input-outlined" placeholder="abc@gmail.com" name="email" required>
+                    <input type="text" class="input input-outlined" placeholder="abc@gmail.com" name="email" >
                     
                     <label for="psw" class="typo-label">Password</label>
-                    <input type="password" class="input input-outlined" placeholder="Enter Password" name="psw" required>
+                    <input type="password" class="input input-outlined" placeholder="Enter Password" name="psw" >
                       
                     <label class="flex-hz-space-bw">
                         <span><input type="checkbox" checked="checked" name="remember"> Remember me
@@ -71,7 +71,9 @@
                         </a>
                     </label>
                     <button type="submit" class="btn btn-primary">Login</button>
-                    <button class="btn btn-link">Create New Account > </button>
+                    <button class="btn btn-link">
+                        <a href="./register.html" class="link-no-style">Create New Account >></a>
+                    </button>
                   </div>
                 </form>
             </div>
