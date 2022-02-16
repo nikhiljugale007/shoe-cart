@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Register</title>
+		<link rel="stylesheet" href="./common.css" />
+		<link
+			href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<main>
+			<div class="header-container">
+				<header class="header">
+					<div class="header-sub-container">
+						<button class="btn btn-primary btn-icon btn-menu">
+							<i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+						</button>
+						<a href="#" class="btn btn-link btn-hide">
+							<img
+								class="img-round logo-container"
+								src="./resources/ecommerce-logo.png"
+							/>
+						</a>
+						<a href="#" class="btn btn-link"> Home </a>
+						<a href="#" class="btn btn-link btn-hide"> Shop </a>
+					</div>
+					<div class="search-container btn-hide">
+						<button class="btn btn-icon">
+							<i class="fa fa-search fa-lg" aria-hidden="true"></i>
+						</button>
+						<input
+							type="text"
+							class="search-bar"
+							placeholder="woodland shoes.."
+						/>
+					</div>
+
+					<div class="header-sub-container">
+						<button class="btn btn-primary btn-icon btn-hide">
+							<i
+								class="fa fa-shopping-cart fa-2x btn-hide"
+								aria-hidden="true"
+							></i>
+						</button>
+						<button class="btn btn-primary btn-icon btn-hide">
+							<i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+						</button>
+						<button class="btn btn-primary btn-icon">
+							<i class="fa fa-user fa-2x" aria-hidden="true"></i>
+						</button>
+					</div>
+				</header>
+			</div>
+			<div class="form-container">
+                <form class="form card">
+                    <p class="typo-title flex-hz-center p-1">Sign Up</p>
+                     
+                    <label for="fname" class="typo-label" >First Name</label>
+                    <input type="text" class="input input-outlined" placeholder="Nikhil" name="fname"/> 
+
+                    <label for="lname" class="typo-label" >Last Name</label>
+                    <input type="text" class="input input-outlined" placeholder="Jugale" name="lname" />
+                    
+                    <label for="email" class="typo-label" >Email address</label>
+                    <input type="text" class="input input-outlined" placeholder="abc@gmail.com" name="email" >
+                    
+                    <label for="psw" class="typo-label">Password</label>
+                    <input type="password" class="input input-outlined" placeholder="Enter Password" name="psw" >
+                      
+                    <label for="rpsw" class="typo-label">Confirm Password</label>
+                    <input type="password" class="input input-outlined" placeholder="Re-enter Password" name="rpsw" >
+                 
+                    <label class="flex-hz-space-bw">
+                        <span><input type="checkbox" checked="checked" name="remember"> I accept all terms & Conditions
+                        </span>
+                        
+                    </label>
+                    <button type="submit" class="btn btn-primary">Register</button>
+                    <button class="btn btn-link">
+                        <a href="./login.html" class="link-no-style">Already have a Account >></a>
+                    </button>
+                  </div>
+                </form>
+            </div>
+		</main>
+	</body>
+</html>
