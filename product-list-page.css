@@ -61,6 +61,9 @@ main {
 .sidebar-section {
 	background-color: var(--primary-bg-color);
 	grid-area: sidebar;
+	overflow: scroll;
+	scroll-behavior: smooth;
+	height: auto;
 }
 .mobile-bottom-sidbar {
 	display: none;
@@ -81,6 +84,9 @@ main {
 .product-section {
 	grid-area: product;
 	padding: 0 1rem;
+	overflow: scroll;
+	scroll-behavior: smooth;
+	height: auto;
 }
 .grid-3-responsive {
 	display: grid;
