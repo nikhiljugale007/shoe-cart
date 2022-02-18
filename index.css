@@ -30,7 +30,7 @@ main {
 	align-items: center;
 	gap: 0 2rem;
 }
-.btn {
+.btn-icon {
 	color: #2d3748;
 }
 .search-container {

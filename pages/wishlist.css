@@ -52,8 +52,8 @@ main {
 
 .grid-4-responsive {
 	overflow: scroll;
-	height: 80vh;
-	row-gap: 1.6rem;
+	height: 78vh;
+	gap: 1.6rem;
 }
 
 hr {
@@ -70,8 +70,8 @@ hr {
 	top: -1rem;
 	right: -1rem;
 }
-.card {
-	border: 1px solid var(--primary-color);
+.text-badge {
+	color: var(--complimentary-font-color);
 }
 .card-img-container {
 	border-top-right-radius: 5px;
@@ -92,6 +92,10 @@ hr {
 	.card {
 		align-self: center;
 		justify-self: center;
+	}
+	.grid-4-responsive {
+		overflow: scroll;
+		height: 90vh;
 	}
 }
 h1 {

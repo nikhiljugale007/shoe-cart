@@ -1,5 +1,4 @@
 @import url("https://vercel-ui-preview.netlify.app/component-lib/all-comp.css");
-@import url("https://kit.fontawesome.com/cb91afed1c.js");
 * {
 	margin: 0;
 	box-sizing: border-box;
@@ -17,6 +16,7 @@ main {
 	font-size: 1.6rem;
 	padding: 0 1.6rem;
 	display: grid;
+	grid-template-rows: auto 1fr;
 }
 
 .header {
@@ -161,11 +161,7 @@ hr {
 			"product product"
 			"sidebar sidebar";
 	}
-	.hero-section .img-responsive {
-		border-top-right-radius: 0;
-		border-bottom-left-radius: 10px;
-		border-bottom-right-radius: 10px;
-	}
+
 	.btn-menu {
 		display: block;
 	}

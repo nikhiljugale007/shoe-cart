@@ -4,9 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./product-list-page.css" />
-		<link rel="stylesheet" href="./utility.css" />
-		<title>Product Listing page</title>
+		<link rel="stylesheet" href="./common.css" />
+		<title>Shoes-Buy Shoes Now</title>
 
 		<script
 			src="https://kit.fontawesome.com/cb91afed1c.js"
@@ -32,15 +31,16 @@
 						<button class="btn btn-primary btn-icon btn-menu">
 							<i class="fa fa-bars fa-lg" aria-hidden="true"></i>
 						</button>
-						<a href="#" class="btn btn-link btn-hide">
+						<a href="../index.html" class="btn btn-link btn-hide">
 							<img
 								class="img-round logo-container"
-								src="./resources/ecommerce-logo.png"
-								alt="logo"
+								src="../resources/ecommerce-logo.png"
 							/>
 						</a>
-						<a href="#" class="btn btn-link"> Home </a>
-						<a href="#" class="btn btn-link btn-hide"> Shop </a>
+						<a href="../index.html" class="btn btn-link"> Home </a>
+						<a href="./product-page.html" class="btn btn-link btn-hide">
+							Shop
+						</a>
 					</div>
 					<div class="search-container btn-hide">
 						<button class="btn btn-icon">
@@ -52,20 +52,27 @@
 							placeholder="woodland shoes.."
 						/>
 					</div>
+
 					<div class="header-sub-container">
-						<button class="btn btn-primary btn-icon btn-hide">
-							<i class="far fa-heart fa-2x badge-parent">
-								<span class="badge-content badge-itself">5</span>
-							</i>
-						</button>
-						<button class="btn btn-primary btn-icon btn-hide">
-							<i class="fas fa-shopping-basket fa-2x badge-parent">
-								<span class="badge-content badge-itself">3</span>
-							</i>
-						</button>
-						<button class="btn btn-primary btn-icon">
-							<i class="far fa-user-circle fa-2x"></i>
-						</button>
+						<a class="link-no-style" href="./wishlist.html">
+							<button class="btn btn-primary btn-icon btn-hide">
+								<i class="far fa-heart fa-2x badge-parent">
+									<span class="badge-content badge-itself">5</span>
+								</i>
+							</button>
+						</a>
+						<a class="link-no-style" href="./cart-page.html">
+							<button class="btn btn-primary btn-icon btn-hide">
+								<i class="fas fa-shopping-basket fa-2x badge-parent">
+									<span class="badge-content badge-itself">3</span>
+								</i>
+							</button>
+						</a>
+						<a class="link-no-style" href="./profile.html">
+							<button class="btn btn-primary btn-icon">
+								<i class="far fa-user-circle fa-2x"></i>
+							</button>
+						</a>
 					</div>
 				</header>
 			</div>
@@ -172,9 +179,9 @@
 					</div>
 
 					<div class="desktop-sidebar">
-						<div class="flex-hz-space-bw p-2">
-							<div>Filter</div>
-							<div>clear</div>
+						<div class="flex-hz-space-bw p-1">
+							<div class="btn btn-text">Apply</div>
+							<button class="btn btn-text">clear all</button>
 						</div>
 						<hr />
 						<div class="list">
@@ -374,7 +381,6 @@
 								</div>
 							</div>
 						</div>
-
 						<div class="card">
 							<div class="badge-image-container">
 								<img
@@ -412,7 +418,6 @@
 								</div>
 							</div>
 						</div>
-
 						<div class="card">
 							<div class="badge-image-container">
 								<img
