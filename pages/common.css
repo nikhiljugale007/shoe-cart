@@ -4,3 +4,6 @@
 @import url("./profile.css");
 @import url("./product-list-page.css");
 @import url("./cart-page.css");
+.text-badge {
+	color: var(--complimentary-font-color);
+}
