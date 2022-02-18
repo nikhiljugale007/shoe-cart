@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Vercel store for shoes</title>
 		<link rel="stylesheet" href="./index.css" />
-		<link rel="stylesheet" href="./utility.css" />
+		<link rel="stylesheet" href="./pages/utility.css" />
 		<link
 			href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
 			rel="stylesheet"
@@ -24,14 +24,19 @@
 						<button class="btn btn-primary btn-icon btn-menu">
 							<i class="fa fa-bars fa-lg" aria-hidden="true"></i>
 						</button>
-						<a href="#" class="btn btn-link btn-hide">
+						<a href="index.html" class="btn btn-link btn-hide">
 							<img
 								class="img-round logo-container"
 								src="./resources/ecommerce-logo.png"
 							/>
 						</a>
-						<a href="#" class="btn btn-link"> Home </a>
-						<a href="#" class="btn btn-link btn-hide"> Shop </a>
+						<a href="index.html" class="btn btn-link"> Home </a>
+						<a
+							href="./pages/product-list-page.css"
+							class="btn btn-link btn-hide"
+						>
+							Shop
+						</a>
 					</div>
 					<div class="search-container btn-hide">
 						<button class="btn btn-icon">
@@ -45,19 +50,25 @@
 					</div>
 
 					<div class="header-sub-container">
-						<button class="btn btn-primary btn-icon btn-hide">
-							<i class="far fa-heart fa-2x badge-parent">
-								<span class="badge-content badge-itself">5</span>
-							</i>
-						</button>
-						<button class="btn btn-primary btn-icon btn-hide">
-							<i class="fas fa-shopping-basket fa-2x badge-parent">
-								<span class="badge-content badge-itself">3</span>
-							</i>
-						</button>
-						<button class="btn btn-primary btn-icon">
-							<i class="far fa-user-circle fa-2x"></i>
-						</button>
+						<a class="link-no-style" href="./pages/wishlist.html">
+							<button class="btn btn-primary btn-icon btn-hide">
+								<i class="far fa-heart fa-2x badge-parent">
+									<span class="badge-content badge-itself">5</span>
+								</i>
+							</button>
+						</a>
+						<a class="link-no-style" href="./pages/cart-page.html">
+							<button class="btn btn-primary btn-icon btn-hide">
+								<i class="fas fa-shopping-basket fa-2x badge-parent">
+									<span class="badge-content badge-itself">3</span>
+								</i>
+							</button>
+						</a>
+						<a class="link-no-style" href="./pages/profile.html">
+							<button class="btn btn-primary btn-icon">
+								<i class="far fa-user-circle fa-2x"></i>
+							</button>
+						</a>
 					</div>
 				</header>
 			</div>
@@ -130,15 +141,33 @@
 			<footer class="footer flex-vt-center">
 				Made with ❤️ by Nikhil Jugale
 				<div class="flex-hz-center">
-					<button class="btn btn-primary btn-icon">
-						<i class="fa fa-github fa-2x" aria-hidden="true"></i>
-					</button>
-					<button class="btn btn-primary btn-icon">
-						<i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
-					</button>
-					<button class="btn btn-primary btn-icon">
-						<i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
-					</button>
+					<a
+						class="link-no-style"
+						href="https://www.github.com/nikhiljugale007"
+						target="_blank"
+					>
+						<button class="btn btn-primary btn-icon">
+							<i class="fa fa-github fa-2x" aria-hidden="true"></i>
+						</button>
+					</a>
+					<a
+						class="link-no-style"
+						href="https://www.twitter.com/nikhiljugale007"
+						target="_blank"
+					>
+						<button class="btn btn-primary btn-icon">
+							<i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+						</button>
+					</a>
+					<a
+						class="link-no-style"
+						href="https://www.linkedin.com/in/nikhiljugale007/"
+						target="_blank"
+					>
+						<button class="btn btn-primary btn-icon">
+							<i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+						</button>
+					</a>
 				</div>
 			</footer>
 		</main>
