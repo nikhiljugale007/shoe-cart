@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./product-list-page.css" />
+		<link rel="stylesheet" href="./utility.css" />
+		<title>Product Listing page</title>
+
+		<script
+			src="https://kit.fontawesome.com/cb91afed1c.js"
+			crossorigin="anonymous"
+		></script>
+
+		<script>
+			function openMobileSidebar() {
+				let mobileSidebar = document.getElementById("mobile-sidebar");
+				mobileSidebar.classList.add("show-element");
+			}
+			function closeMobileSidebar() {
+				let mobileSidebar = document.getElementById("mobile-sidebar");
+				mobileSidebar.classList.remove("show-element");
+			}
+		</script>
+	</head>
+	<body>
+		<main>
+			<div class="header-container">
+				<header class="header">
+					<div class="header-sub-container">
+						<button class="btn btn-primary btn-icon btn-menu">
+							<i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+						</button>
+						<a href="#" class="btn btn-link btn-hide">
+							<img
+								class="img-round logo-container"
+								src="./resources/ecommerce-logo.png"
+								alt="logo"
+							/>
+						</a>
+						<a href="#" class="btn btn-link"> Home </a>
+						<a href="#" class="btn btn-link btn-hide"> Shop </a>
+					</div>
+					<div class="search-container btn-hide">
+						<button class="btn btn-icon">
+							<i class="fa fa-search fa-lg" aria-hidden="true"></i>
+						</button>
+						<input
+							type="text"
+							class="search-bar"
+							placeholder="woodland shoes.."
+						/>
+					</div>
+					<div class="header-sub-container">
+						<button class="btn btn-primary btn-icon btn-hide">
+							<i class="far fa-heart fa-2x badge-parent">
+								<span class="badge-content badge-itself">5</span>
+							</i>
+						</button>
+						<button class="btn btn-primary btn-icon btn-hide">
+							<i class="fas fa-shopping-basket fa-2x badge-parent">
+								<span class="badge-content badge-itself">3</span>
+							</i>
+						</button>
+						<button class="btn btn-primary btn-icon">
+							<i class="far fa-user-circle fa-2x"></i>
+						</button>
+					</div>
+				</header>
+			</div>
+			<div class="product-page">
+				<div class="sidebar-section">
+					<div class="mobile-bottom-sidbar">
+						<div class="flex-hz-space-bw p-1">
+							<button class="btn btn-text" onclick="openMobileSidebar()">
+								Filter
+							</button>
+							<button class="btn btn-text">clear all</button>
+						</div>
+					</div>
+					<div class="mobile-sidebar hide" id="mobile-sidebar">
+						<div class="flex-hz-space-bw p-2">
+							<div class="btn btn-text" onclick="closeMobileSidebar()">
+								Apply
+							</div>
+							<button class="btn btn-text" onclick="closeMobileSidebar()">
+								clear all
+							</button>
+						</div>
+						<hr />
+						<div class="list">
+							<label class="typo-bold" for="volume">Price</label>
+							<div class="slider-container">
+								<label class="typo-subtext" for="volume">200</label>
+								<input
+									type="range"
+									id="volume"
+									name="volume"
+									min="200"
+									max="5000"
+								/>
+								<label class="typo-subtext" for="volume">5000</label>
+							</div>
+						</div>
+						<hr />
+						<ul class="list list-style-nostyle">
+							<p class="text-bold">Category</p>
+							<li class="list-item">
+								<label>
+									<input type="checkbox" />
+									<span>Formal Shoes</span>
+								</label>
+							</li>
+							<li class="list-item">
+								<label>
+									<input type="checkbox" />
+									<span>Casual Shoes</span>
+								</label>
+							</li>
+							<li class="list-item">
+								<label>
+									<input type="checkbox" />
+									<span>Wedding shoes</span>
+								</label>
+							</li>
+						</ul>
+						<hr />
+						<ul class="list list-style-nostyle">
+							<p class="text-bold">Rating</p>
+							<li class="list-item">
+								<label>
+									<input type="radio" name="rating" />
+									<span>4 Star & above</span>
+								</label>
+							</li>
+							<li class="list-item">
+								<label>
+									<input type="radio" name="rating" />
+									<span>3 Star & above</span>
+								</label>
+							</li>
+							<li class="list-item">
+								<label>
+									<input type="radio" name="rating" />
+									<span>2 Star & above</span>
+								</label>
+							</li>
+							<li class="list-item">
+								<label>
+									<input type="radio" name="rating" />
+									<span>1 Star & above</span>
+								</label>
+							</li>
+						</ul>
+						<hr />
+						<ul class="list list-style-nostyle">
+							<p class="text-bold">Sort By</p>
+							<li class="list-item">
+								<label>
+									<input type="radio" name="rating" />
+									<span>Price - Low to High</span>
+								</label>
+							</li>
+							<li class="list-item">
+								<label>
+									<input type="radio" name="rating" />
+									<span>Price - High to Low</span>
+								</label>
+							</li>
+						</ul>
+					</div>
+
+					<div class="desktop-sidebar">
+						<div class="flex-hz-space-bw p-2">
+							<div>Filter</div>
+							<div>clear</div>
+						</div>
+						<hr />
+						<div class="list">
+							<label class="typo-bold" for="volume">Price</label>
+							<div class="slider-container">
+								<label class="typo-subtext" for="volume">200</label>
+								<input
+									type="range"
+									id="volume"
+									name="volume"
+									min="200"
+									max="5000"
+								/>
+								<label class="typo-subtext" for="volume">5000</label>
+							</div>
+						</div>
+						<hr />
+						<ul class="list list-style-nostyle">
+							<p class="text-bold">Category</p>
+							<li class="list-item">
+								<label>
+									<input type="checkbox" />
+									<span>Formal Shoes</span>
+								</label>
+							</li>
+							<li class="list-item">
+								<label>
+									<input type="checkbox" />
+									<span>Casual Shoes</span>
+								</label>
+							</li>
+							<li class="list-item">
+								<label>
+									<input type="checkbox" />
+									<span>Wedding shoes</span>
+								</label>
+							</li>
+						</ul>
+						<hr />
+						<ul class="list list-style-nostyle">
+							<p class="text-bold">Rating</p>
+							<li class="list-item">
+								<label>
+									<input type="radio" name="rating" />
+									<span>4 Star & above</span>
+								</label>
+							</li>
+							<li class="list-item">
+								<label>
+									<input type="radio" name="rating" />
+									<span>3 Star & above</span>
+								</label>
+							</li>
+							<li class="list-item">
+								<label>
+									<input type="radio" name="rating" />
+									<span>2 Star & above</span>
+								</label>
+							</li>
+							<li class="list-item">
+								<label>
+									<input type="radio" name="rating" />
+									<span>1 Star & above</span>
+								</label>
+							</li>
+						</ul>
+						<hr />
+						<ul class="list list-style-nostyle">
+							<p class="text-bold">Sort By</p>
+							<li class="list-item">
+								<label>
+									<input type="radio" name="rating" />
+									<span>Price - Low to High</span>
+								</label>
+							</li>
+							<li class="list-item">
+								<label>
+									<input type="radio" name="rating" />
+									<span>Price - High to Low</span>
+								</label>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="product-section">
+					<div class="grid grid-3-responsive">
+						<div class="card">
+							<div class="badge-image-container">
+								<span class="text-badge ecommerce-chip-left"> NEW </span>
+								<img
+									class="card-img-container img-responsive"
+									src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/7695721/2018/10/26/89c7901f-02f0-4e98-85d2-f945fdb7da3e1540553499022-Red-Chief-Black-Low-Ankle-Leather-Derby-Shoes-RC3527-001-1851540553498851-1.jpg"
+									alt="footware"
+								/>
+								<button class="btn btn-icon ecommerce-chip-right wishlisted">
+									<i class="fa fa-heart" aria-hidden="true"></i>
+								</button>
+							</div>
+							<div class="card-body">
+								<p class="typo-label">Oxford formal shoes</p>
+								<div class="flex-hz-space-bw">
+									<p class="typo-subtext">Sold By : Sir Corbett</p>
+									<div class="star-rating-view">
+										<span class="rating-text">4</span>
+										<span class="rating-icon">
+											<i class="fa fa-star fa-md" aria-hidden="true"></i>
+										</span>
+										<span class="rating-text">|</span>
+										<span class="rating-text">5</span>
+									</div>
+								</div>
+								<p class="text-bold">
+									Rs. 974
+									<span class="typo-subtext text-line-through">Rs 3249</span>
+									<span class="typo-subtext text-primary">10% off</span>
+								</p>
+
+								<div class="card-footer-container ecommerce-card-footer">
+									<button class="btn btn-outlined full-width">
+										ADD TO CART
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="badge-image-container">
+								<img
+									class="card-img-container img-responsive"
+									src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/15778984/2021/10/25/55fc2006-88c1-414e-bc0c-a102bd09de2f1635184405734ProvogueMenTanBrownFormalOxfords1.jpg"
+									alt="footware"
+								/>
+								<button class="btn btn-icon ecommerce-chip-right wishlisted">
+									<i class="fa fa-heart" aria-hidden="true"></i>
+								</button>
+							</div>
+							<div class="card-body">
+								<p class="typo-label">Semi formal shoes</p>
+								<div class="flex-hz-space-bw">
+									<p class="typo-subtext">Sold By : Red Tape</p>
+									<div class="star-rating-view">
+										<span class="rating-text">4.4</span>
+										<span class="rating-icon">
+											<i class="fa fa-star fa-md" aria-hidden="true"></i>
+										</span>
+										<span class="rating-text">|</span>
+										<span class="rating-text">5</span>
+									</div>
+								</div>
+								<p class="text-bold">
+									Rs. 1499
+									<span class="typo-subtext text-line-through">Rs 5999</span>
+									<span class="typo-subtext text-primary">75% off</span>
+								</p>
+
+								<div class="card-footer-container ecommerce-card-footer">
+									<button class="btn btn-outlined full-width">
+										ADD TO CART
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="badge-image-container">
+								<span class="text-badge ecommerce-chip-left"> NEW </span>
+								<img
+									class="card-img-container img-responsive"
+									src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/15082078/2021/8/20/62ee2efb-5302-4b3f-9280-e10f67adc6731629460965700ProvogueMenBlackSolidFormalLoafers1.jpg"
+									alt="footware"
+								/>
+								<button class="btn btn-icon ecommerce-chip-right">
+									<i class="fa fa-heart" aria-hidden="true"></i>
+								</button>
+							</div>
+							<div class="card-body">
+								<p class="typo-label">Leather Formal Boots</p>
+								<div class="flex-hz-space-bw">
+									<p class="typo-subtext">Sold By : Louis stitch</p>
+									<div class="star-rating-view">
+										<span class="rating-text">5</span>
+										<span class="rating-icon">
+											<i class="fa fa-star fa-md" aria-hidden="true"></i>
+										</span>
+										<span class="rating-text">|</span>
+										<span class="rating-text">5</span>
+									</div>
+								</div>
+								<p class="text-bold">
+									Rs.2069
+									<span class="typo-subtext text-line-through">Rs 8999</span>
+									<span class="typo-subtext text-primary">7% off</span>
+								</p>
+
+								<div class="card-footer-container ecommerce-card-footer">
+									<button class="btn btn-outlined full-width">
+										ADD TO CART
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="badge-image-container">
+								<img
+									class="card-img-container img-responsive"
+									src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/7695721/2018/10/26/89c7901f-02f0-4e98-85d2-f945fdb7da3e1540553499022-Red-Chief-Black-Low-Ankle-Leather-Derby-Shoes-RC3527-001-1851540553498851-1.jpg"
+									alt="footware"
+								/>
+								<button class="btn btn-icon ecommerce-chip-right">
+									<i class="fa fa-heart" aria-hidden="true"></i>
+								</button>
+							</div>
+							<div class="card-body">
+								<p class="typo-label">Oxford formal shoes</p>
+								<div class="flex-hz-space-bw">
+									<p class="typo-subtext">Sold By : Sire Corbett</p>
+									<div class="star-rating-view">
+										<span class="rating-text">4</span>
+										<span class="rating-icon">
+											<i class="fa fa-star fa-md" aria-hidden="true"></i>
+										</span>
+										<span class="rating-text">|</span>
+										<span class="rating-text">5</span>
+									</div>
+								</div>
+								<p class="text-bold">
+									Rs. 974
+									<span class="typo-subtext text-line-through">Rs 3249</span>
+									<span class="typo-subtext text-primary">10% off</span>
+								</p>
+
+								<div class="card-footer-container ecommerce-card-footer">
+									<button class="btn btn-outlined full-width">
+										ADD TO CART
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="badge-image-container">
+								<img
+									class="card-img-container img-responsive"
+									src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/16277520/2021/11/27/62f21aff-c778-41d6-a4fe-8d80efc697aa1638012650825ALBERTOMORENOMenBrownSolidFormalLoafers1.jpg"
+									alt="footware"
+								/>
+								<button class="btn btn-icon ecommerce-chip-right">
+									<i class="fa fa-heart" aria-hidden="true"></i>
+								</button>
+							</div>
+							<div class="card-body">
+								<p class="typo-label">Solid formal slip-ons</p>
+								<div class="flex-hz-space-bw">
+									<p class="typo-subtext">Sold By : Bata</p>
+									<div class="star-rating-view">
+										<span class="rating-text">4.3</span>
+										<span class="rating-icon">
+											<i class="fa fa-star fa-md" aria-hidden="true"></i>
+										</span>
+										<span class="rating-text">|</span>
+										<span class="rating-text">5</span>
+									</div>
+								</div>
+								<p class="text-bold">
+									Rs. 959
+									<span class="typo-subtext text-line-through">Rs 1066</span>
+									<span class="typo-subtext text-primary">10% off</span>
+								</p>
+
+								<div class="card-footer-container ecommerce-card-footer">
+									<button class="btn btn-outlined full-width">
+										ADD TO CART
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="badge-image-container">
+								<img
+									class="card-img-container img-responsive"
+									src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/15778984/2021/10/25/55fc2006-88c1-414e-bc0c-a102bd09de2f1635184405734ProvogueMenTanBrownFormalOxfords1.jpg"
+									alt="footware"
+								/>
+								<button class="btn btn-icon ecommerce-chip-right">
+									<i class="fa fa-heart" aria-hidden="true"></i>
+								</button>
+							</div>
+							<div class="card-body">
+								<p class="typo-label">Semi formal shoes</p>
+								<div class="flex-hz-space-bw">
+									<p class="typo-subtext">Sold By : Red Tape</p>
+									<div class="star-rating-view">
+										<span class="rating-text">4.4</span>
+										<span class="rating-icon">
+											<i class="fa fa-star fa-md" aria-hidden="true"></i>
+										</span>
+										<span class="rating-text">|</span>
+										<span class="rating-text">5</span>
+									</div>
+								</div>
+								<p class="text-bold">
+									Rs. 1499
+									<span class="typo-subtext text-line-through">Rs 5999</span>
+									<span class="typo-subtext text-primary">75% off</span>
+								</p>
+
+								<div class="card-footer-container ecommerce-card-footer">
+									<button class="btn btn-outlined full-width">
+										ADD TO CART
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="badge-image-container">
+								<img
+									class="card-img-container img-responsive"
+									src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/15082078/2021/8/20/62ee2efb-5302-4b3f-9280-e10f67adc6731629460965700ProvogueMenBlackSolidFormalLoafers1.jpg"
+									alt="footware"
+								/>
+								<button class="btn btn-icon ecommerce-chip-right">
+									<i class="fa fa-heart" aria-hidden="true"></i>
+								</button>
+							</div>
+							<div class="card-body">
+								<p class="typo-label">Leather Formal Boots</p>
+								<div class="flex-hz-space-bw">
+									<p class="typo-subtext">Sold By : Louis stitch</p>
+									<div class="star-rating-view">
+										<span class="rating-text">5</span>
+										<span class="rating-icon">
+											<i class="fa fa-star fa-md" aria-hidden="true"></i>
+										</span>
+										<span class="rating-text">|</span>
+										<span class="rating-text">5</span>
+									</div>
+								</div>
+								<p class="text-bold">
+									Rs.2069
+									<span class="typo-subtext text-line-through">Rs 8999</span>
+									<span class="typo-subtext text-primary">7% off</span>
+								</p>
+
+								<div class="card-footer-container ecommerce-card-footer">
+									<button class="btn btn-outlined full-width">
+										ADD TO CART
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="badge-image-container">
+								<img
+									class="card-img-container img-responsive"
+									src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/16277520/2021/11/27/62f21aff-c778-41d6-a4fe-8d80efc697aa1638012650825ALBERTOMORENOMenBrownSolidFormalLoafers1.jpg"
+									alt="footware"
+								/>
+								<button class="btn btn-icon ecommerce-chip-right">
+									<i class="fa fa-heart" aria-hidden="true"></i>
+								</button>
+							</div>
+							<div class="card-body">
+								<p class="typo-label">Solid formal slip-ons</p>
+								<div class="flex-hz-space-bw">
+									<p class="typo-subtext">Sold By : Bata</p>
+									<div class="star-rating-view">
+										<span class="rating-text">4.3</span>
+										<span class="rating-icon">
+											<i class="fa fa-star fa-md" aria-hidden="true"></i>
+										</span>
+										<span class="rating-text">|</span>
+										<span class="rating-text">5</span>
+									</div>
+								</div>
+								<p class="text-bold">
+									Rs. 959
+									<span class="typo-subtext text-line-through">Rs 1066</span>
+									<span class="typo-subtext text-primary">10% off</span>
+								</p>
+
+								<div class="card-footer-container ecommerce-card-footer">
+									<button class="btn btn-outlined full-width">
+										ADD TO CART
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
