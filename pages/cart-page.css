@@ -8,6 +8,14 @@
 html {
 	font-size: 62.5%;
 }
+main {
+	min-height: 100vh;
+	font-size: 1.6rem;
+	padding: 0 1.6rem;
+	display: grid;
+	grid-template-rows: auto 1fr;
+}
+
 body {
 	overflow: hidden;
 	background-color: var(--primary-bg-color);
