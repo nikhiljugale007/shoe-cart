@@ -43,3 +43,11 @@
 .show-element {
 	display: block;
 }
+.btn-full-width {
+	width: 100%;
+}
+.active-tag {
+	color: var(--primary-color);
+	background-color: var(--hover-color);
+	transform: scale(1.2);
+}

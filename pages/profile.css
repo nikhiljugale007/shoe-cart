@@ -1,0 +1,112 @@
+@import url("https://vercel-ui-preview.netlify.app/component-lib/all-comp.css");
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-size: 100%;
+}
+html {
+	font-size: 62.5%;
+}
+main {
+	display: grid;
+	height: 100vh;
+	grid-template-rows: auto auto 1fr;
+}
+
+.header {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	box-shadow: 0 5px 3px -3px var(--box-shadow);
+}
+
+.header-sub-container {
+	display: flex;
+	align-items: center;
+	gap: 0 2rem;
+}
+.search-container {
+	display: flex;
+	gap: 0;
+	background-color: var(--hover-color);
+}
+.search-bar {
+	padding: 1rem;
+	border: 0;
+	border-radius: 8px;
+	background-color: var(--hover-color);
+}
+.search-bar:focus {
+	outline: none;
+	border-radius: 8px;
+}
+::-webkit-scrollbar {
+	width: 0;
+	background: transparent;
+}
+
+.profile-container {
+	display: flex;
+	border-top: 1px solid gray;
+}
+.profile-links {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 2rem;
+	border-right: 1px solid gray;
+}
+.profile-items {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 2rem;
+}
+.profile-heading {
+	padding: 2rem 0;
+	font-weight: 600;
+}
+.profile-row {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 1rem 0;
+}
+.profile-row-heading {
+	width: 15rem;
+}
+hr {
+	margin: 0;
+}
+.mobile-sidebar {
+	width: 30rem;
+}
+.drawer-header {
+	background-color: var(--dark-primary-color);
+	padding: 2rem;
+}
+.drawer-body {
+	width: 100%;
+}
+.drawer-header .btn-icon {
+	color: var(--complimentary-font-color);
+}
+.drawer-item {
+	padding: 2rem;
+}
+.drawer-item:hover {
+	transform: scale(1);
+}
+@media screen and (max-width: 992px) {
+	main {
+		margin: 0;
+		padding: 0;
+	}
+	.btn-menu {
+		display: block;
+	}
+	.btn-hide {
+		display: none;
+	}
+}
